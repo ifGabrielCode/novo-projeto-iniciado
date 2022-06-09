@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Jogo de Ca&ccedil;a-Palavras</title> 
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/solid.css" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+        <link href="https: //fonts.googleapis.com/css2? família= Ubuntu:wght@300 & display=swap" rel="stylesheet">
+        <link href="https: //fonts.googleapis.com/css2? família= Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700 & display=swap" rel="stylesheet">
+        <script> // Microsoft Bing
+            (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/9twm8m8r4i?ref=bwt";
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "9twm8m8r4i");
+        </script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-52394643-1"></script>
+        <script> // Google Analytics
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'UA-52394643-1');
+        </script>
+    </head>
+    <body>
+        <h1 id="titulo">JOGOS</h1>
+        <header id="menu">
+            <div class="conteiner">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="/projeto/home.html">Home</a>  
+                        </li>
+                        <li>
+                            <a href="/projeto/frasesDoDia.html">Frases do dia</a>
+                            
+                        </li>
+                        <li>
+                            <a href="#">Jogos</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="/projeto/memoria.html">Jogo de Mem&oacute;ria</a>
+                                </li>
+                                <li>
+                                    <a href="/projeto/caca-palavra.html">Jogo de Ca&ccedil;a-palavras</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/projeto/sobreMim.html">Sobre Mim</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <h1>Ca&ccedil;a-palavras</h1>
+        <br>
+        <h3 class="description">
+            Jogue para testar sua velocidade do seu localizador visual.        
+            <br><br>
+            <u>Como jogar:</u>  
+            Encontre o grupo de caracteres destacado na parte superior de 
+            do ca&ccedil;a-palavras.
+        </h3>
+        <div class="streaks">
+            SEQUENCIA: <span class="streak">0</span> <span class="fa">&#xf21b;</span> MELHOR SEQUECIA: <span class="max_streak">0</span>
+            <br>TEMPO: <span class="time">0.000</span> <span class="fa">&#xf2f2;</span> MELHOR TEMPO: <span class="best_time">0.000</span>
+        </div>
+        <div class="options settings">
+            <div class="option setting">
+                <label>
+                    <input name="char_group[]" value="numeric" type="checkbox" checked="checked">
+                    Num&eacute;rico
+                </label>
+            </div>
+            <div class="option setting">
+                <label>
+                    <input name="char_group[]" value="alphabet" type="checkbox" checked="checked">
+                    Alfabeto
+                </label>
+            </div>
+            <div class="option setting">
+                <label>
+                    <input name="char_group[]" value="alphanumeric" type="checkbox" checked="checked">
+                    Alfanum&eacute;rico
+                </label>
+            </div>
+            <div class="option setting">
+                <label>
+                    <input name="char_group[]" value="greek" type="checkbox" checked="checked">
+                    Grego
+                </label>
+            </div>
+            <div class="option setting">
+                <label>
+                    <input name="char_group[]" value="braille" type="checkbox" checked="checked">
+                    Braile
+                </label>
+            </div>
+            <div class="option setting">
+                <label>
+                    <input name="char_group[]" value="runes" type="checkbox" checked="checked">
+                    Runas
+                </label>
+            </div>
+        </div>
+        <div class="options settings">
+            <div class="option setting">
+                <label><input name="show_type" value="0" type="radio">
+                    Apenas Normal
+                </label>
+            </div>
+            <div class="option setting">
+                <label>
+                    <input name="show_type" value="1" type="radio" checked="checked">
+                    Normal + Espelhado
+                </label>
+            </div>
+            <div class="option setting">
+                <label>
+                    <input name="show_type" value="2" type="radio">
+                    Apenas Espelhado
+                </label>
+            </div>
+        </div>
+        <div class="options settings">
+            <div class="option setting timeout">
+                <label for="timeout">Tempo esgotado:</label>
+                <input id="timeout" type="range" value="15" min="5" max="30" step="5" autocomplete="off">
+                <div class="timeout_value">15s</div>
+            </div>
+            <div class="option setting">
+                <label>
+                    <input id="hide_chars" value="1" type="checkbox" checked="checked">
+                    Esconde caracteres aleat&oacute;riamente
+                </label>
+            </div>
+        </div>
+        <div class="minigame">
+            <div class="splash">
+                <div class="fa hacker">&#xf21b;</div>
+                <span class="text">PREPARANDO A INTERFACE...</span>
+            </div>
+            <div class="hack hidden">
+                <div class="find"></div>
+                <div class="timer">00:00</div>
+                <div class="codes"></div>
+            </div>
+        </div>
+        <div class="restart">
+            <button class="btn_again">
+                JOGAR NOVAMENTE!
+            </button>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="script/script.js"></script>
+    </body>
+    <footer>
+        <p style="text-align: center;">ifGabrielCode - Telefone para contato (11)99962-0569 - Santo André-SP</p>
+        <ul class="social-icons">
+            <p style="text-align: center;"> <small>&copy; Copyright 2022 - ifGabrielCode todos os direitos reservados.</small></p>   
+            <li><a href="https://www.instagram.com/ifgabrielcode/">
+                <i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/ifGabrielCode">
+                <i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://github.com/ifGabrielCode">
+                <i class="fa fa-github"></i></a></li>
+            <li><a href="https://contate.me/ifGabrielCode">
+                <i class="fa fa-whatsapp"></i></a></li>
+        </ul>
+    </footer>
+</html

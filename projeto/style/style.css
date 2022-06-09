@@ -1,0 +1,520 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0 auto;
+      
+}
+
+html{
+    padding:5px 20px 0;
+    margin:0 auto;
+    max-width: 1923px;
+    width: 100%; 
+}
+p{
+    font-size:1em;
+    text-indent: 1em;
+    text-align:left;
+}
+
+#menu{
+    padding:15px 0;
+    position:relative;
+    max-width: 1923px;
+    width: 100%;
+    height:1px;
+    margin-left:-5px;
+    margin-bottom: 120px;
+    text-align:center;
+    
+}
+
+#menu nav {
+    text-align:center;  
+    max-width: 1923px;
+    width: 100%;
+    
+}
+
+#menu ul{
+    display:flex;
+    flex-direction:row;
+    list-style:none;    
+    padding: 0 20px;
+    background:#3248;
+    text-align:center;
+    border-radius:10px;
+    margin-left: -11px;
+    margin-right: 8px;
+}
+#menu ul li{
+    margin:15px 5px;
+    position:relative;
+    display:flex;
+    background:#0669c7;
+    max-width: 1923px;
+    width: 100%;
+    max-width:1920px;
+    text-align:center;
+    border-radius:10px;
+    border: 1px solid #000;
+}
+
+#menu ul li:last-child {
+    margin-right: 0;
+    border-radius:10px;
+
+}
+#menu ul li a{
+    text-decoration:none;
+    color: #fff;
+    max-width: 1923px;
+    width: 100%;
+    height: 100%;
+    padding:10px 11px;
+    transition: all ease-in-out 200ms;
+    align-items: center;
+    border-radius:10px;
+}
+#menu ul li a:hover{
+    background:#780483;
+    color: #e71717;
+    max-width: 1923px;
+    width: 100%;
+    padding:10px 11px;
+    border-radius:10px;
+
+}
+#menu ul li .submenu{
+    display: none;
+    position: absolute;
+    max-width: 1923px;
+    width: 100%;
+    top: 39px;
+    left: 11px;
+    height: auto;
+    padding: 0 ;
+    border-radius:10px;
+}
+
+#menu ul li .submenu:hover{
+    display: block;
+    border-radius:10px;
+}
+#menu ul li .submenu li{
+    margin: 0;
+    border-radius:10px;
+    border: 1px solid #000;
+}
+
+#menu ul li .submenu li a{
+    max-width: 1923px;
+    width: 100%;
+    height: 38px;
+    text-align:center;
+    padding:10px 0;
+    border-radius:10px;
+}
+#menu ul li .submenu li:hover{
+    background:#780483;
+    color: #e71717;
+    max-width: 1923px;
+    width: 100%;
+    padding:0;
+    border-radius:10px;
+}
+
+#menu ul li a:hover ~ .submenu{
+    display: block;
+    
+}
+
+.conteiner {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width:1920px;
+    margin:10px;
+    
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    width:100%;
+    padding:6px;
+    background:#ad7272c5;
+}
+
+h1{
+    font-family:'Ubuntu', sans-serif;
+    font-size:2.6em;
+    color:#6f0279;
+    width:100%;
+    text-align:left;
+    letter-spacing:-0.1em;
+    word-spacing:0.1em;
+    text-shadow:3px 3px 0 #00a2ff;
+}
+
+
+#titulo{
+    font-family:'Ubuntu', sans-serif;
+    background-image: url(/projeto/fotos/baner_site.jpg);
+    font-size:2.6em;
+    color:#6f0279;
+    max-width: 1923px;
+    width: 100%;
+    letter-spacing:-0.1em;
+    word-spacing:0.1em;
+    text-align: center;
+    text-shadow:3px 3px 0 #00a2ff;
+    padding:25px 0;
+    /*latter e word-spacing é são bons para titulos latter diminui ou aumenta o espaçamento das letras e o word o das palavras*/
+
+}
+
+
+.box{
+    background:#2645accc;
+    width:300px;
+    height:200px;
+    margin-top: 35px;   
+    padding:10px 25px;
+    display:inline-flex;
+    justify-content: space-between;
+    border-radius:35px;
+    
+}
+
+.centrazilado{
+    margin: auto;
+    max-width: 1923px;
+    width: 100%;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/*.box2{
+    background:#2645accc;
+    width:320px;
+    height:200px;
+    margin:30px 5px;
+    padding:10px 20px;
+    display:inline-flex;
+    overflow-wrap:break-word;
+    justify-content: space-between;
+}*/
+
+#sobremim{
+    background-image:url(/projeto/fotos/baner_site.jpg);
+    width:100%;
+    max-width:1920px;
+    margin-right: 15px;
+    text-shadow:4px 4px 0 #000;
+    border-radius: 10px;
+}
+
+
+footer { 
+    clear:both; 
+    max-width: 1923px;
+    width: 100%;
+    margin:0 auto; 
+    font-size:0.75em; 
+    text-align:center; 
+    padding:5px;
+}
+
+.social-icons{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+
+.social-icons li{
+    display:inline-block;
+    margin:0.15em;
+    position:relative;
+    font-size:1.2em;
+}
+
+.social-icons i{
+    color:#fff;
+    position:absolute;
+    top:21px;
+    left:21px;
+    transition:all 265ms ease-out;
+    
+}
+
+.social-icons a{
+    display:inline-block;
+}
+
+.social-icons a::before{
+    transform:scale(1);
+    -ms-transform:scale(1);
+    -webkit-transform:scale(1);
+    content:" ";
+    width:55px;
+    height:55px;
+    border-radius:100%;
+    display:block;
+    background:linear-gradient(43deg,#780483 0%,#0057c8 46%,#00a2ff 100%);
+    transition:all 265ms ease-out;
+}
+
+.social-icons a:hover::before {
+    transform:scale(0);
+    transition:all 265ms ease-in;
+}
+
+.social-icons a:hover i{
+    transform:scale(2);
+    -ms-transform:scale(2);
+    -webkit-transform:scale(2);
+    color:#fff;
+    background:linear-gradient(43deg,#780483 0%,#0057c8 46%,#00a2ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    transition:all 265ms ease-in;
+}
+
+:root {
+    --block-color: #394D61;
+    --bg-color: #16181C;
+}
+
+
+.bod{
+    /*background-color: var(--bg-color);*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1923px;
+    width: 100%;
+    margin:0 auto;
+}
+
+div.grid{
+    margin: 20px auto;
+    width: 700px;
+    height: 700px;
+    background: #2D3139;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 10px;
+}
+
+.grid.won .block{
+    background: #2a8040;
+}
+.grid.lost .block{
+    background: #F22300;
+}
+
+.block{
+    background: #394D61;
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.block.show,.block.correct{
+    background: #bfbfbf;
+}
+.block.incorrect{
+    background: #F22300;
+}
+.grid.lost .show.block {
+    background: #6d9070;
+}
+.grid.lost .block {
+    background: #bd5151;
+}
+
+.grid.lost .block.clicked.incorrect {
+    background: #F22300;
+}
+.grid.lost .block.clicked.correct {
+    background: #bfbfbf;
+}
+
+.restart-button{
+    display: block;
+    padding: 12px 60px;
+    background: #394D61;
+    color: white;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    max-width: 1923px;
+    width: 100%;
+}
+
+#rodape{
+    text-align: center;
+    background-color: #000;
+}
+.streaks {
+    display: block;
+    margin: 40px auto;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    width: -moz-fit-content;
+    width: fit-content;
+    background-color: #028000;
+    padding: 12px;
+    border-radius: 18px;
+}
+.best_time,
+.time {
+    display: inline-block;
+    width: 100px;
+}
+.streaks .fa {
+    padding: 0 10px;
+}
+.options{
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto 10px;
+    cursor: default;
+    user-select: none;
+}
+.option{
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 20px;
+    background-color: #20282e;
+    padding: 10px 20px;
+    margin: 0 auto 10px;
+    border-radius: 6px;
+}
+.option.setting{
+    display: inline-flex;
+    height: 32px;
+    padding: 0;
+}
+.option.setting label{
+    font-size: 12px;
+    padding: 6px 10px 6px 6px;
+    cursor: pointer;
+}
+.option.setting input{
+    vertical-align: -2px;
+    cursor: pointer;
+}
+.option.timeout label{
+    padding: 9px;
+}
+.option.timeout input{
+    vertical-align: text-top;
+}
+.timeout_value{
+    font-size: 12px;
+    display: inline-block;
+    width: 18px;
+    text-align: right;
+    padding: 9px 12px 9px 5px;
+}
+.minigame{
+    margin: 0 auto 20px;
+    width: 540px;
+    min-width: 540px;
+    max-width: 540px;
+    background-color: #232832;
+    padding: 30px 0;
+}
+.splash{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+.splash .hacker{
+    font-size: 65px;
+    margin-bottom: 30px;
+}
+.splash .text{
+    font-weight: bold;
+}
+.minigame .find{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+	user-select: none;
+    margin-top: 10px;
+}
+.minigame .find > div{
+    display: inline-block;
+}
+.minigame .timer{
+    text-align: center;
+    color: green;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.minigame .codes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    margin: auto;
+}
+.minigame .codes > div{
+    flex: 1 0 10%;
+    margin: 7px 0;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+.minigame .codes > div.red{
+    color: red;
+}
+.minigame .codes > div.green{
+    color: green;
+}
+.minigame .mirrored .find > div,
+.minigame .mirrored .codes > div {
+    -moz-transform: scale(-1, -1);
+    -o-transform: scale(-1, -1);
+    -webkit-transform: scale(-1, -1);
+    transform: scale(-1, -1);
+}
+.hidden {
+    display: none;
+}
+.restart{
+    text-align: center;
+}
+.btn_again {
+    padding: 6px 15px;
+    font-weight: bold;
+}
+.credits{
+    text-align: center;
+    color: gray;
+    margin-top: 40px;
+}
+.credits a{
+    color: #ccc;
+}
+.credits b{
+    color: white;
+}
+.credits .fas{
+    color: red;
+}
+
