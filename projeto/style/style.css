@@ -162,7 +162,7 @@ h1{
 
 #titulo{
     font-family:'Ubuntu', sans-serif;
-    background-image: url(/projeto/fotos/baner_site.jpg);
+    background: url(./../fotos/baner_site.jpg) center/cover no-repeat;
     font-size:2.6em;
     color:#6f0279;
     max-width: 1923px;
@@ -209,7 +209,7 @@ h1{
 }*/
 
 #sobremim{
-    background-image:url(/projeto/fotos/baner_site.jpg);
+    background-image:url(./../fotos/baner_site.jpg);
     width:100%;
     max-width:1920px;
     margin-right: 15px;
