@@ -4,8 +4,8 @@ window.correctBlocksNum = 14;
 window.maxIncorrectBlocksNum = 3;
 window.allBlocksNum = 36;
 
-$(document.body).on("click", ".block", onBlockClick);
-$(document.body).on("click", ".restart-button, .grid.won, .grid.lost", restartGame);
+$('body').on("click", ".block", onBlockClick);
+$('body').on("click", ".restart-button, .grid.won, .grid.lost", restartGame);
 
 function generateRandomNumberBetween(min=1,max=window.allBlocksNum,length = window.correctBlocksNum){
     var arr = [];
